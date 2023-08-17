@@ -45,6 +45,13 @@ const collectionOfSpeakers = [
       She was former Chairman of First Bank of Nigeria. She was appointed
       a member of Binance Global Advisory Board in September 2022.`,
     },
+     {
+        name: 'TIMOTHY T. ONOJA',
+        image_url: './images/speaker-6.jpg',
+        image_credit: 'Speaker 6 image',
+        job: 'CEO Pecman Group',
+        description: `This website was designed by Me.`,
+    },
     // ... (other speakers)
 ];
 
