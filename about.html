@@ -61,25 +61,33 @@
             </div>
         </section>
         <!-- LATEST EVENTS SECTION -->
-        <section class="section latest-events">
-            <div class="title-box d-flex">
-                <h2 class="section-title">See the past Leaders Week Africa</h2>
-                <div class="separator"></div>
-                <p>
-                    Take a look at the last two Leaders Week Africa which took place in Ghana and Nairobi.
-                </p>
-            </div>
-            <div class="events-box-container d-flex">
-                <div class="events-box box-1 d-flex">
-                    <span class="date bold">2021</span>
-                    <p>Leaders Week Africa 2021 in Ghana</p>
-                </div>
-                <div class="events-box box-2 d-flex">
-                    <span class="date bold">2019</span>
-                    <p>Leaders Week Africa 2019 in Nairobi</p>
-                </div>
-            </div>
-        </section>
+        <section class="section register-section" id="Register">
+    <div class="title-box d-flex">
+        <h2 class="section-title">Register for the Conference</h2>
+        <div class="separator"></div>
+    </div>
+    <div class="section-container">
+        <form class="register-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="country">Country from Africa:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Nigeria">Nigeria</option>
+                <!-- Add more African countries here -->
+            </select>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit" class="btn btn-register">Register</button>
+        </form>
+        <p class="registration-message hidden-item">Registration successful! Please check your email.</p>
+    </div>
+</section>
 
         <!-- PARTNERS SECTION -->
         <section class="section home-page partner-section" id="Partner">
