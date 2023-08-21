@@ -50,7 +50,7 @@ const collectionOfSpeakers = [
         image_url: './images/speaker-6.jpg',
         image_credit: 'Speaker 6 image',
         job: 'CEO Pecman Group',
-        description: `This website was designed by Me.`,
+        description: `Frontend developer, and chairman of pecman GROUP.`,
     },
     // ... (other speakers)
 ];
