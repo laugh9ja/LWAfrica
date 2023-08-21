@@ -46,7 +46,7 @@ const collectionOfSpeakers = [
       a member of Binance Global Advisory Board in September 2022.`,
     },
      {
-        name: 'TIMOTHY T. ONOJA',
+        name: 'Timothy T. Onoja',
         image_url: './images/speaker-6.jpg',
         image_credit: 'Speaker 6 image',
         job: 'CEO Pecman Group',
@@ -112,19 +112,7 @@ function createSpeakerInfos(name, job, description) {
 }
 
 // Show/Hide Speakers
-const moreButton = document.querySelector('.btn-more');
-const speakerBoxes = document.querySelectorAll('.speaker-box');
 
-function toggleSpeakerVisibility() {
-    const isMobile = window.innerWidth < 768;
-    const displayStyle = isMobile ? 'none' : 'grid';
-
-    speakerBoxes.forEach((box, index) => {
-        if (index >= 2) {
-            box.style.display = displayStyle;
-        }
-    });
-}
 
 window.addEventListener('resize', toggleSpeakerVisibility);
 moreButton.addEventListener('click', () => {
