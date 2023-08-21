@@ -445,52 +445,7 @@ button {
   }
 
   /* ==== LATEST EVENTS SECTION ==== */
-  .register-section {
-        background-color: var(--color-whitesmoke);
-        padding: 3em 0;
-        text-align: center;
-    }
-
-    .register-form {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 1.5em;
-        background-color: var(--color-white);
-        border-radius: 8px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .register-form label {
-        display: block;
-        font-size: 1.1rem;
-        margin-bottom: 0.5em;
-    }
-
-    .register-form input,
-    .register-form select {
-        width: 100%;
-        padding: 0.5em;
-        margin-bottom: 1em;
-        border: 1px solid var(--color-grey);
-        border-radius: 4px;
-    }
-
-    .btn-register {
-        background-color: var(--color-dark-orange);
-        color: var(--color-white);
-        padding: 0.5em 1em;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .registration-message {
-        display: none;
-        color: var(--color-dark-orange);
-        font-weight: 600;
-        margin-top: 1em;
-    }
-
+  
 
   /* ==== FOOTER ==== */
   footer {
