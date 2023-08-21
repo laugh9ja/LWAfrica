@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Leaders Week Africa - About</title>
+<style>
+  body {
+    font-family: Lato, sans-serif;
+  }
+  .container {
+    background-color:whitesmoke;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  button {
+    background-color: #ec5242;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<!-- MENU -->
+    <div class="nav-box d-flex">
+        <nav class="menu-top">
+            <a href="index.html"><img src="images/logo-gc-2.png" alt="Leaders Week Africa Logo" class="hidden-item logo"></a>
+            <ul>
+                <li><a href="#" class="menu-item icon"><img src="images/facebook-app-symbol.png" alt="facebook icon"></a></li>
+                <li><a href="#" class="menu-item icon"><img src="images/twitter.png" alt="twitter icon"></a></li>
+                <li><a href="#" class="menu-item">My Page</a></li>
+                <li><a href="#" class="menu-item">Logout</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" alt="menu icon" id="menu-icon">
+        <nav class="menu-box" id="menu-box">
+            <a href="index.html"><img src="images/logo-gc-1.png" alt="Leaders Week Africa Logo" class="hidden-item logo"></a>
+            <ul>
+                <li><a href="about.html" class="menu-item active">About</a></li>
+                <li><a href="index.html#Program" class=" menu-item">Programs</a></li>
+                <a href="index.html#Speakers" class="menu-item">Speakers</a></li>
+                <li><a href="register.html" class="menu-item">Register</a></li>
+                <li><a href="index.html#Partner" class="menu-item">Sponsors</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- MAIN -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="about-page hero-section d-flex" id="Home">
+            <div class="section-container d-flex">
+                <div class="title-box d-flex">
+                    <div class="separator"></div>
+                    <h2 class="subtitle bold">AFRICA 2023</h2>
+                    <h1 class="title bold">Leaders Week</h1>
+                </div>
+
+<div class="container">
+  <h3>Register for the conference</h3>
+<br>
+  <form id="registrationForm">
+    <input type="text" placeholder="Name" id="name" required>
+    <input type="text" placeholder="Email" id="email" required>
+    <select id="country" required>
+      <option value="" disabled selected>Select Country</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+      <!-- Add more countries here -->
+    </select>
+    <button type="button" onclick="register()">Register</button>
+  </form>
+</div>
+
+<script>
+function register() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var country = document.getElementById("country").value;
+
+  if (name && email && country) {
+    var userInfo = {
+      name: name,
+      email: email,
+      country: country
+    };
+
+    localStorage.setItem("userInfo", JSON.stringify(userInfo));
+    alert("Registration successfully! Check your email.");
+    document.getElementById("registrationForm").reset();
+  } else {
+    alert("Please fill in all fields.");
+  }
+}
+</script>
+
+</body>
+</html>
