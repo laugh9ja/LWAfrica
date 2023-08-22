@@ -13,6 +13,13 @@ const featuredSpeakersContainer = document.querySelector('.featured-speakers .se
 
 const collectionOfSpeakers = [
     {
+        name: 'Engr. Dr. Amadi Emmanuel',
+        image_url: './images/speaker-5.jpg',
+        image_credit: 'Speaker 1 image',
+        job: 'CEO,NITDA Labs',
+        description: `Engr Dr Amadi Emmanuel is the chief Executive Officer of NITDA Labs and the chairman of the 2023 Leaders week Africa Conference.`,
+    },
+    {
         name: 'Tony O. Elumelu',
         image_url: './images/speaker-1.webp',
         image_credit: 'Speaker 1 image',
@@ -27,6 +34,13 @@ const collectionOfSpeakers = [
         job: 'Nigerian Businessman',
         description: `Aliko Dangote GCON is a Nigerian businessman and industrialist. He is the founder, 
      and CEO of the Dangote Group, the largest industrial conglomerate in West Africa.`,
+    },
+    {
+        name: 'Timothy T. Onoja',
+        image_url: './images/speaker-6.jpg',
+        image_credit: 'Speaker 6 image',
+        job: 'CEO Pecman Group',
+        description: `Frontend developer, and chairman of pecman GROUP.`,
     },
     {
         name: 'Obiageli "Oby" Ezekwesili',
@@ -45,13 +59,9 @@ const collectionOfSpeakers = [
       She was former Chairman of First Bank of Nigeria. She was appointed
       a member of Binance Global Advisory Board in September 2022.`,
     },
-     {
-        name: 'Timothy T. Onoja',
-        image_url: './images/speaker-6.jpg',
-        image_credit: 'Speaker 6 image',
-        job: 'CEO Pecman Group',
-        description: `Frontend developer, and chairman of pecman GROUP.`,
-    },
+    
+    // ... (other speakers)
+];
     // ... (other speakers)
 ];
 
