@@ -59,9 +59,6 @@ const collectionOfSpeakers = [
       She was former Chairman of First Bank of Nigeria. She was appointed
       a member of Binance Global Advisory Board in September 2022.`,
     },
-    
-    // ... (other speakers)
-];
     // ... (other speakers)
 ];
 
